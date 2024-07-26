@@ -7,14 +7,17 @@ import Socials from "../components/Socials";
 import Button from "../components/Button";
 import { useTheme } from "next-themes";
 // Data
-import { name, showResume } from "../data/portfolio.json";
-import { resume } from "../data/portfolio.json";
+// import { name, showResume } from "../data/portfolio.json";
+// import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
 
 const Resume = () => {
   const router = useRouter();
   const theme = useTheme();
   const [mount, setMount] = useState(false);
+  const [name, setName] = useState(data.name);
+  const [showResume, setShowResume] = useState(data.showResume);
+  const [resume, setResume] = useState(data.resume);
 
   useEffect(() => {
     setMount(true);
