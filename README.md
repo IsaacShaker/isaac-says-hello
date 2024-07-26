@@ -1,18 +1,25 @@
-### Features - 
+## Getting Started
 
-- Modern Stack (Next.js + TailwindCSS)
-- Minimal Design
-- Easy To Browse
-- Easy To Customize your details With GUI
-- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
-- Dark Mode
+1. Clone the repository
 
+```
+git clone https://github.com/IsaacShaker/isaac-says-hello.git
+```
 
-### Sections
+2. Create Docker image
 
-- Header
-- Work
-- Services
-- About
-- Contact
-- Markdown Blog
+```
+docker build -t portfolio-site .
+```
+
+3. Run Docker contianer
+
+```
+docker-compose up
+```
+
+4. Stop Docker container
+
+```
+docker-compose down
+```
